@@ -40,7 +40,7 @@ router.get('/public/images', function(req, res, next) {
 })
 
 router.post('/upload', upload.any(), function(req, res, next) {
-    res.send("uploded success <a style='color:white' href='http://52.15.138.37:3000/upload'>Upload Another</a>'");
+    res.send("uploded success <a style='color:white' href='http://52.15.138.37:9000/upload'>Upload Another</a>'");
     var len=req.files.length;
 
     for(i=0;i<len;i++)
