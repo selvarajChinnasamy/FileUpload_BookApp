@@ -1,0 +1,8 @@
+
+> s3practice@0.0.0 start C:\Users\SELVA RAJ\Angular Apps\easyuploadtoAmazonS3-example\easyuploadtoAmazonS3-example
+> node ./bin/www
+
+[0mGET /upload [32m200 [0m1176.167 ms - 2753[0m
+[0mGET /upload [36m304 [0m6.141 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m16.842 ms - -[0m
+[0mGET /stylesheets/style.css [36m304 [0m0.926 ms - -[0m
