@@ -1,0 +1,28 @@
+<div class="main">
+<div class="login-page">
+    <div class="texto"><h2>Register</h2></div>  
+    <div class="form">   
+      <form [formGroup]="rForm" (ngSubmit)="addPost(rForm.value)">                
+          <div class="input-group">
+  <label> Name </label>
+    <input style="width:110%" type="text" formControlName="name">
+</div>
+<div class="alert" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">{{ titleAlert }}</div>
+
+<div class="input-group">
+  <label>User_Name </label>
+    <input type="text" formControlName="username">
+</div>
+<div class="alert" *ngIf="!rForm.controls['username'].valid && rForm.controls['username'].touched">{{ titleAlert }}</div>
+
+<div class="input-group">
+  <label> Password </label>
+    <input type="password" formControlName="password">
+</div>    
+<div class="alert" *ngIf="!rForm.controls['password'].valid && rForm.controls['password'].touched">You must specify a description that's between 8 characters.</div>
+<a class="register" routerLink="/">Already a member ? Go and log in</a>  
+<div class="navbar-brand"><button type="submit"  class="btn btn-warning" [disabled]="!rForm.valid">Register</button></div>
+</form>
+</div>
+</div>
+</div>

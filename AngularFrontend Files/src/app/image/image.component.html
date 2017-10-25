@@ -1,0 +1,18 @@
+<div class="main">  
+<div class="container">    
+  <div class="total" *ngFor="let i of products;let j=index;"  >
+      <a href="{{i.location}}"><img class="img1" src="{{i.location}}"></a>
+      {{i.Location}}
+      <div class="delet" (click)="deleteImages(i.name,i.id,j)">
+      <img src="assets/delete.png">
+  </div>
+  </div>
+  </div>
+  </div>
+<div class="rightCon1">
+  <div class="fileUpload btn btn-primary" *ngIf="isUploadBtn">  
+  <span>Upload</span>  
+  <input type="file" id="btnUpload" value="Upload" (change)="fileChange($event)" class="upload" />  
+  </div>
+</div> 
+

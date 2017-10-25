@@ -1,0 +1,123 @@
+.total{
+    margin: 2%;
+    padding:5px;
+    float: left;
+    background:#DCDCDC;
+    text-align: center;
+}
+.total .delet{
+ width: 100%;
+ height: 10%;
+ z-index: 999;
+ margin-top: 25%;
+ background:black;
+}
+.total .p1{
+    text-decoration: underline;
+}
+.total .p2{
+    margin-top: -10px;
+   }
+
+   .main {
+    background-image:url('../../assets/pexels-photo.jpg');
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .navbar-brand{
+    z-index: 999;
+}
+.addbtn{
+    margin-top: 1%;
+    margin-left: 93%;
+    position: absolute;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background:#20B2AA;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  .form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .form .button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 20%;
+    margin-left: -80%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .form .button:hover,.form .button:active,.form .button:focus {
+    background: #43A047;
+  }
+  .form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  .form .message a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  .form .register-form {
+    display: none;
+  }
+ 
+
+  .alert {
+    background: #f2edda;
+    padding: 7px;
+    font-size: .9em;
+    margin-bottom: 20px;
+    margin-left: -80%;
+    display: inline-block;
+    animation: 2s alertAnim forwards;
+}
+
+
+
+@keyframes alertAnim {
+    from {
+        opacity:0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+
+.logout{
+    margin-top: 1%;
+    margin-left: 87%;
+    position: absolute;
+}
+.container{
+    margin-top: 5%;
+}
