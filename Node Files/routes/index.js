@@ -39,9 +39,9 @@ router.get('/public/images', function(req, res, next) {
     res.render('index');
 })
 
+
 router.post('/upload', upload.any(), function(req, res, next) {
-    res.send("uploded success <a style='color:white' href='http://52.15.138.37:9000/upload'>Upload Another</a>'");
-    var len=req.files.length;
+      var len=req.files.length;
 
     for(i=0;i<len;i++)
     {
@@ -63,7 +63,11 @@ router.post('/upload', upload.any(), function(req, res, next) {
         });
         connection.end();   
 
-        console.log(req.files[i].location);
+        store=JSON.stringify({location :req.files[i].location});
+        console.log(store);
+          res.setHeader("Content-Type", "text/json");
+          res.setHeader("Access-Control-Allow-Origin", "*");
+          res.end(store)
     }
 
 })
